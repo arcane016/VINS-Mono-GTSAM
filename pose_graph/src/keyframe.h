@@ -85,15 +85,15 @@ public:
 	Eigen::Matrix3d origin_vio_R;
 	cv::Mat image;
 	cv::Mat thumbnail;
-	vector<cv::Point3f> point_3d; 
-	vector<cv::Point2f> point_2d_uv;
-	vector<cv::Point2f> point_2d_norm;
-	vector<double> point_id;
-	vector<cv::KeyPoint> keypoints;
-	vector<cv::KeyPoint> keypoints_norm;
-	vector<cv::KeyPoint> window_keypoints;
-	vector<BRIEF::bitset> brief_descriptors;
-	vector<BRIEF::bitset> window_brief_descriptors;
+	std::vector<cv::Point3f> point_3d; 
+	std::vector<cv::Point2f> point_2d_uv;
+	std::vector<cv::Point2f> point_2d_norm;
+	std::vector<double> point_id;
+	std::vector<cv::KeyPoint> keypoints;
+	std::vector<cv::KeyPoint> keypoints_norm;
+	std::vector<cv::KeyPoint> window_keypoints;
+	std::vector<BRIEF::bitset> brief_descriptors;
+	std::vector<BRIEF::bitset> window_brief_descriptors;
 	bool has_fast_point;
 	int sequence;
 
